@@ -12,7 +12,7 @@ void nextpermutation(vector<int>& arr){
     }
     if(idx == -1){
         reverse(arr.begin(), arr.end());
-        break;
+        return;
     }
     for(int i = n-1;i > idx; i--){
         if(arr[i] > arr[idx]){
